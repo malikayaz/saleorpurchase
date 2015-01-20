@@ -1,6 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApplication1._Default" %>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head profile="http://gmpg.org/xfn/11">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -19,34 +17,21 @@
     <div id="wrap">
         <div id="features">
             <div id="action">
-                <form id="frmEmail" runat="server">
+                <form id="frmEmail">
                     <div style="width: 100%; float: left; text-align: left;">
                         <p id="version"><strong style="color: #ff0404;">saleorpurchase.com</strong> is on sale. If you want to buy please email us your offer.</p>
                     </div>
                     <div style="width: 50%; float: left; text-align: right; font-size: 12px;">Contact back Email Address:&nbsp;&nbsp;</div>
                     <div style="width: 50%; float: left; text-align: left;">
-                        <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                        <input type="text" id="txtEmail" />
                     </div>
                     <div style="width: 50%; float: left; text-align: right; margin-top: 10px; font-size: 12px;">Your bid value (USD):&nbsp;&nbsp;</div>
                     <div style="width: 50%; float: left; text-align: left; margin-top: 10px">
-                        <asp:TextBox ID="txtOffer" runat="server"></asp:TextBox>
+                        <input type="text" id="txtOffer" />
                     </div>
                     <div style="width: 100%; float: left; margin-top: 25px;">
-                        <p id="download">
-                            <%--<a href="#">Sent Email</a>--%>
-                            <asp:Button ID="btnEmail" runat="server" Text="Send Email" OnClick="btnEmail_Click" />
-
-                        </p>
-                    </div>
-                    <div style="width: 100%; float: left; margin-top: 10px;">
-                        <p id="P1">
-                            <asp:Label runat="server" ForeColor="#ff0404" ID="lblMessage" Visible="false"></asp:Label>
-                        </p>
-                    </div>
-                    <div style="width: 100%; float: left; margin-top: 25px;">
-                        <p id="P2">
-                            <%--<a href="#">Sent Email</a>--%>
-                            <asp:Button ID="Button1" runat="server" Text="Message" />
+                         <p id="download">
+                            <input type="button" id="Button1" value="Message" title="Alert Message" />
                         </p>
                     </div>
                 </form>

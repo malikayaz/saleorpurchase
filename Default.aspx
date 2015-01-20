@@ -42,30 +42,13 @@
                         <p id="P1">
                             <asp:Label runat="server" ForeColor="#ff0404" ID="lblMessage" Visible="false"></asp:Label>
                         </p>
-                    </div>
-                    <div style="width: 100%; float: left; margin-top: 25px;">
-                        <p id="P2">
-                            <%--<a href="#">Sent Email</a>--%>
-                            <asp:Button ID="Button1" runat="server" Text="Message" />
-                        </p>
-                    </div>
+                    </div>                    
                 </form>
             </div>
             <!--end #action-->
         </div>
         <!--end #demo-->
         <!--end #wrap-->
-    </div>
-    <script type="text/javascript">
-        $("#Button1").bind("click", function (e) {
-            e.preventDefault();
-            alert("you clicked on it; type email in the box and click again");
-            var email = $("#txtEmail").val();
-            if (email != "")
-                alert("email is " + email);
-
-        });
-
-    </script>
+    </div>   
 </body>
 </html>
