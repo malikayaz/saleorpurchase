@@ -7,7 +7,7 @@
 // create the module and name it scotchApp
 // also include ngRoute for all our routing needs
 var SwimAMile = angular.module('SwimAMile', ['ngRoute']);
-var apiRoot = '/';
+var apiRoot = 'samta.saleorpurchase.com';
 var gsessions = [];
 var password = '15910535-a88e-413a-9a6f-6a384c704fe4';
 //configure our routes
