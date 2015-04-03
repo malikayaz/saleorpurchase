@@ -1,0 +1,52 @@
+﻿<div class="navbar-fixed-top startheader">
+    <div class="container body-content">
+        <div class="row" style="margin-left: 30px;">
+            <div class="col-xs-4 text-left left">Lane{{lane}}:Heat{{heat}}</div>
+            <div class="col-xs-4 text-center center">{{time}}</div>
+            <div class="col-xs-4 text-right right">10:00:00</div>
+        </div>
+    </div>
+</div>
+
+<!--{"id":128,"bib":"445","fName":"First Name 2","lName":"Last Name 2","gender":"m","age":10,"email":"rajazahidrasheed@gmail.com","division":"Division 2","lane":2,"sessionId":7,"srNo":2,"startTime":"2015-02-27T09:21:00"}-->
+<div class="row" style="margin-top:50px; margin-bottom:75px;  margin-right: 5px !important;
+  margin-left: 5px !important; ">
+
+    <div class="col-xs-6" style="padding:5px !important;" ng-repeat="p in participants">
+        <button ng-click="clicked(p.id)" style="border:none; padding:0px; margin:0px; background-color:transparent;" class="col-xs-12">
+            <div class="bib {{p.participantStatus}} col-xs-2">
+                {{p.bib}}
+            </div>
+            <div class="nonbib col-xs-10">
+                <div class="nameAndremaing col-xs-12">
+                    <div class="col-xs-11" style="padding:0px;">
+                        {{p.fName}} {{p.lName}}
+                    </div>
+                    <div class="col-xs-1" style="padding:0px;">
+                        {{p.remainingLaps}}
+                    </div>
+                </div>
+                <div class="meterAndStatus col-xs-12">
+                    <div class="col-xs-4" style="padding:0px;">
+                        {{p.totalLength}}
+                    </div>
+                    <div class="col-xs-8" style="padding:0px;">
+                        {{p.statusText}}
+                    </div>
+                </div>
+            </div>
+        </button>
+    </div>
+</div>
+
+
+<footer class="navbar-fixed-bottom startheader">
+    <div class="container body-content">
+        <div class="row" style="margin-left: 30px;">
+            <button ng-click="pause()" class="btn btn-primary btn-sm">{{pauseText}}</button>
+            <button ng-click="import()" class="btn btn-primary btn-sm">Import Paused</button>
+            <button ng-click="disqualify()" class="btn btn-primary btn-sm">{{disQualifyText}}</button>
+            <button ng-click="save()" class="btn btn-primary btn-sm">FINISH</button>
+        </div>
+    </div>
+</footer>

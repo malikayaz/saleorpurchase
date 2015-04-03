@@ -1,0 +1,142 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Set padding to display errors that occur during databinding */
+.padding-error {
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .nofloat {
+        float: none;
+        padding: 10px 15px;
+    }
+}
+
+.view-animate-container {
+    position: relative;
+    height: 100px !important;
+    background: white;
+    border: 1px solid black;
+    height: 40px;
+    overflow: hidden;
+}
+
+.view-animate {
+    padding: 10px;
+}
+
+    .view-animate.ng-enter, .view-animate.ng-leave {
+        -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+        transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+        display: block;
+        width: 100%;
+        border-left: 1px solid black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 10px;
+    }
+
+    .view-animate.ng-enter {
+        left: 100%;
+    }
+
+        .view-animate.ng-enter.ng-enter-active {
+            left: 0;
+        }
+
+    .view-animate.ng-leave.ng-leave-active {
+        left: -100%;
+    }
+
+.fullWidth {
+    max-width: 100% !important;
+}
+
+.startheader {
+    line-height:80px;
+    background-color:#333333;
+    color:#ffffff;
+    margin:10px;
+}
+.startheader .left{
+    font-size:16px;
+    
+}
+.startheader .center{
+    font-size:35px;
+  
+}
+.startheader .right{
+    font-size:16px;
+}
+.bib {
+    color: #ffffff;
+    line-height:68px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 2px 0px;
+    padding:0px;
+}
+.nonbib  {
+    padding: 0px;
+}
+
+.NotStarted {
+    background-color: #dbca6e;
+}
+
+.Disqualified {
+    background-color: #eeeeee;
+}
+
+.started {
+    background-color: #4cff00;
+}
+
+.finished {
+    background-color: #ff0000;
+}
+.Paused {
+    background-color: #0000ff;
+}
+
+.nameAndremaing {
+    background-color: #605e5e;
+    color: #ffffff;
+    padding: 7px;
+    margin:2px 0px 0px 0px;
+}
+.meterAndStatus {
+    background-color: #d0cbcb;
+    color: #ffffff;
+    padding: 7px;
+    margin:0px 0px 2px 0px;
+}
